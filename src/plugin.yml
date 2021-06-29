@@ -1,0 +1,9 @@
+name: InvisibleItemFrames
+version: 1.1
+author: MrTransistor
+main: ru.tulavcube.InvisibleItemFrames.InvisibleItemFrames
+commands:
+  findframes:
+    usage: "Usage: /findframes"
+    description: "Lights up invisible item frames in 10 block radius around player for 10 seconds"
+api-version: 1.17
