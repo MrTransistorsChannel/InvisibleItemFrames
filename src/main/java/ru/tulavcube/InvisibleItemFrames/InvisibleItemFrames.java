@@ -1,7 +1,5 @@
 package ru.tulavcube.InvisibleItemFrames;
 
-import org.bukkit.craftbukkit.v1_17_R1.entity.CraftGlowItemFrame;
-import org.bukkit.craftbukkit.v1_17_R1.entity.CraftItemFrame;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -34,10 +32,10 @@ public class InvisibleItemFrames extends JavaPlugin implements Listener {
             if (effects.isEmpty()) {
                 for (Entity entity : potion.getNearbyEntities(1, 1, 1)) {
                     if (entity.getType() == EntityType.ITEM_FRAME) {
-                        ((CraftItemFrame) entity).setVisible(true);
+                        ((ItemFrame) entity).setVisible(true);
                     }
                     else if(entity.getType() == EntityType.GLOW_ITEM_FRAME){
-                        ((CraftGlowItemFrame) entity).setVisible(true);
+                        ((GlowItemFrame) entity).setVisible(true);
                     }
                 }
             } else {
